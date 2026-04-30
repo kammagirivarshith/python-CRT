@@ -1,0 +1,15 @@
+names=["ram","raju","rose","ravi"]
+marks=[[30,40,50],[66,77,55],[44,56,46],[79,89,80]]
+pos=1
+for i in range(4):
+    d=sum(marks[i])//3
+    if d>80:
+        grade="s"
+    elif d<=40:
+        grade="f"
+    elif d>40 and d<=60:
+        grade="b"
+    else:
+        grade="a"
+    print("{}.{} has scored {}% - {} grade".format(pos,names[i],d,grade))
+    pos=pos+1
