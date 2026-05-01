@@ -1,0 +1,11 @@
+a=[[" " for i in range(6)]for i in range(6)]
+for i in range(6):
+    for j in range(6):
+        if j==0 or j==5:
+            a[i][j]="*"
+        if i==j and i<3:
+            a[i][j]="*"
+        if i+j==5 and i<3:
+            a[i][j]="*"
+        print(a[i][j],end="")
+    print()    
