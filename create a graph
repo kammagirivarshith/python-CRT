@@ -1,0 +1,9 @@
+import numpy as np
+import matplotlib.pyplot as plt
+overs=np.arange(1,9)
+scores=[20,30,25,46,34,56,65,75]
+plt.bar(overs,scores,color="blue")
+plt.title("India scores")
+plt.xlabel("overs")
+plt.ylabel("scores")
+plt.show()
